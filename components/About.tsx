@@ -8,19 +8,19 @@ const team = [
     name: 'Gopinath',
     role: 'Lead Video Editor',
     bio: 'Our film-graduate editor who turns raw footage into compelling stories.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop',
+    image: 'https://res.cloudinary.com/ditni9lzn/image/upload/IMG_20251020_193310_891_yqattr',
   },
   {
     name: 'Adhwaith',
     role: 'Content & Strategy',
     bio: 'Expert in crafting narratives that resonate and drive brand growth.',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop',
+    image: 'https://res.cloudinary.com/ditni9lzn/image/upload/IMG_20260120_153651_oytcph',
   },
   {
     name: 'Hemachandran',
     role: 'Social Media Specialist',
     bio: 'Master of engagement and digital trends across all platforms.',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://res.cloudinary.com/ditni9lzn/image/upload/WhatsApp_Image_2026-01-20_at_3.38.56_PM_fjn2pk',
   },
   {
     name: 'Sathya Sai',
