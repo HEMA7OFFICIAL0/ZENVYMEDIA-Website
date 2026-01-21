@@ -6,27 +6,33 @@ import Image from 'next/image';
 const team = [
   {
     name: 'Gopinath',
-    role: 'Lead Video Editor',
-    bio: 'Our film-graduate editor who turns raw footage into compelling stories.',
+    role: 'Content & Strategy',
+    bio: 'Expert in crafting narratives that resonate and drive brand growth.Our film-graduate editor who turns raw footage into compelling stories.',
     image: 'https://res.cloudinary.com/ditni9lzn/image/upload/IMG_20251020_193310_891_yqattr',
   },
   {
     name: 'Adhwaith',
-    role: 'Content & Strategy',
-    bio: 'Expert in crafting narratives that resonate and drive brand growth.',
+    role: 'Lead Video Editor',
+    bio: 'Our film-graduate editor who turns raw footage into compelling stories.',
     image: 'https://res.cloudinary.com/ditni9lzn/image/upload/IMG_20260120_153651_oytcph',
+  },
+    {
+    name: 'Gowtham Babu',
+    role: 'Full Stack Developer',
+    bio: 'Full Stack Developer specializing in Java, building scalable, secure, and high-performance web applications from backend to frontend.',
+    image: 'https://res.cloudinary.com/dd3erzmlw/image/upload/Gowtham_Babu_mfmxbp',
   },
   {
     name: 'Hemachandran',
-    role: 'Social Media Specialist',
-    bio: 'Master of engagement and digital trends across all platforms.',
+    role: 'Brand Designer',
+    bio: 'Visual architect creating unique identities for modern brands.',
     image: 'https://res.cloudinary.com/ditni9lzn/image/upload/WhatsApp_Image_2026-01-20_at_3.38.56_PM_fjn2pk',
   },
   {
     name: 'Sathya Sai',
-    role: 'Brand Designer',
-    bio: 'Visual architect creating unique identities for modern brands.',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop',
+    role: 'Social Media Specialist',
+    bio: 'Master of engagement and digital trends across all platforms.',
+    image: 'https://res.cloudinary.com/dd3erzmlw/image/upload/Sathya_Sai_eh9yjb',
   },
 ];
 
@@ -48,7 +54,7 @@ export default function About() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {team.map((member, index) => (
             <motion.div
               key={member.name}

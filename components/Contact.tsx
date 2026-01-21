@@ -1,7 +1,27 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, Phone, Instagram, Facebook, Linkedin, Send } from 'lucide-react';
+import { Mail, Phone, Instagram, Facebook, Youtube, Send } from 'lucide-react';
+
+const list = [
+  {
+    title: 'Instagram',
+    urllink: 'https://www.instagram.com/zenvymedia_official?igsh=MXc1eHB4Y2JoY3R1dA==',
+    icon:Instagram
+
+  },
+
+  {
+    title: 'Facebook',
+    urllink: '',
+    icon:Facebook
+  },
+  {
+    title: 'Youtube',
+    urllink: 'https://www.youtube.com/channel/UCUW2iCitDnRBPRVZt-AuJqQ',
+    icon:Youtube
+  }
+];
 
 export default function Contact() {
   return (
@@ -25,23 +45,31 @@ export default function Contact() {
                 <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-silver transition-colors">
                   <Mail size={20} />
                 </div>
-                <span>hello@zenvymedia.com</span>
+                <span>zenvyofficial04@gmail.com</span>
               </div>
               <div className="flex items-center gap-4 text-gray-300 hover:text-silver transition-colors cursor-pointer group">
                 <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-silver transition-colors">
                   <Phone size={20} />
                 </div>
-                <span>+1 (555) 123-4567</span>
+                <span>+91 7305662449</span>
               </div>
             </div>
 
             <div className="flex gap-4">
-              {[Instagram, Facebook, Linkedin].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-black hover:bg-silver hover:border-silver transition-all duration-300">
+              {list.map(({ title, urllink, icon: Icon }) => (
+                <a
+                  key={title}
+                  href={urllink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={title}
+                  className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-black hover:bg-silver hover:border-silver transition-all duration-300"
+                >
                   <Icon size={18} />
                 </a>
               ))}
             </div>
+
           </motion.div>
 
           <motion.div

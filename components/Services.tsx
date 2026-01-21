@@ -10,6 +10,7 @@ const services = [
     description: 'Professional editing, motion graphics, color grading. We craft cinematic videos from raw footage.',
     icon: Video,
   },
+
   {
     title: 'Content Creation',
     tagline: 'Full content packages',
